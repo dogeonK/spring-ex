@@ -25,7 +25,6 @@ public class HelloController {
 
     //API
     @ResponseBody       //http body부분에 이 데이터 넣겠다    @GetMapping("hello-string")
-
     public String helloString(@RequestParam("name") String name){
         return "hello " + name;     // "hello name"이 그대로 들어감 페이지 소스보기에서 확실하게 느낄 수 있음
     }
